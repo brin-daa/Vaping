@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaping</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align items at the top */
+            align-items: center;
+            height: 100vh;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWsAbQSikHZX5XMMsGX635TwcjWTS1YtsYng&s') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            overflow: hidden; /* Prevents scrollbars */
+        }
+
+        .text_box {
+            background-color: white;
+            border: 2px solid #FF0000; /* Reddish orange color */
+            border-radius: 12px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 23px;
+            font-weight: bold;
+            color: #FF4500; /* Reddish orange color */
+            text-align: center;
+        }
+
+        .middle_text_box {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16.5px;
+            font-weight: bold;
+            color: #FF7043; /* Reddish orange color */
+            text-align: center;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; /* Adjusted width for better readability */
+            line-height: 1.5; /* Better line spacing */
+        }
+
+        .left_text_box {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Nunito', sans-serif;
+            font-size: 15.5px;
+            font-weight: bold;
+            color: #FF7043; /* Reddish orange color */
+            text-align: left;
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%; /* Adjusted width for better readability */
+            line-height: 2; /* Increased line spacing */
+        }
+
+        .bottom_left_text_box {
+            background-color: white;
+            border: 1px solid #FFA07A;
+            border-radius: 12px;
+            padding: 10px 20px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #FF4500;
+            text-align: center;
+            position: absolute;
+            bottom: 45px;
+            left: 10px;
+            line-height: 1.6; /* Increased line spacing */
+        }
+
+        .bottom_right_text_box {
+            background-color: white;
+            border: 1px solid #FFA07A;
+            border-radius: 12px;
+            padding: 10px 20px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #FF4500;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+            line-height: 1.6; /* Increased line spacing */
+        }
+
+        .bottom_center_text_box {
+            padding: 10px 20px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            color: #FFA07A;
+            text-align: center;
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bottom_left_text_box2 {
+            background-color: white;
+            border: 1px solid #FFA07A;
+            border-radius: 12px;
+            padding: 10px 20px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #FF4500;
+            text-align: center;
+            position: absolute;
+            bottom: 48px;
+            left: 280px;
+            line-height: 1.6; /* Increased line spacing */
+        }
+
+        .bottom_right_text_box2 {
+            background-color: white;
+            border: 1px solid #FFA07A;
+            border-radius: 12px;
+            padding: 10px 20px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #FF4500;
+            text-align: center;
+            position: absolute;
+            bottom: 25px;
+            right: 300px;
+            line-height: 1.6; /* Increased line spacing */
+        }
+
+        .image_center_right {
+            position: absolute;
+            top: 49.5%;
+            right: 200px;
+            transform: translateY(-50%);
+            max-width: 16%;
+            height: auto;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%; /* Ensure container takes full width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: auto; /* Push content to the bottom */
+        }
+
+        .gif_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+	        max-width: 16%;
+            margin-top: auto; /* Push the GIF to the bottom */
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between buttons */
+            padding: 20px;
+            margin-top: 20px; /* Additional margin to separate from GIF */
+        }
+
+        .btn {
+            background-color: #FF4500; /* Reddish orange color */
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative; /* Ensure the button can be moved */
+            z-index: 10; /* Ensure the button is on top */
+        }
+
+        /* Other styles... */
+    </style>
+</head>
+<body>
+    <div class="text_box">Stay Sharp, Stay Safe, DON'T VAPE</div>
+
+    <div class="middle_text_box">
+        Do you enjoy vaping? Do you wake up and reach for your vape first thing in the morning? Do you make all your friends get up and look when you lose your vape? Do you get into a bad mood when you haven't had a hit? Do you think about your vape every second of every day? Do you really believe this is healthy? HOW LONG WILL YOU LET THIS CONTINUE?!<br><br>
+        Vaping is taking over your life! Here’s what your precious vape is going to do to you in the following years:
+    </div>
+
+    <div class="left_text_box">
+        <strong>WRINKLES and SAGGING ~</strong> It won't be so cool being called grandma at 35.<br>
+        <strong>IRREVERSIBLE LUNG DAMAGE ~</strong> Have fun breathing at all.<br>
+        <strong>HEART FAILURE ~</strong> People will break your heart, but you will kill it.<br>
+        <strong>COGNITIVE BRAIN DAMAGE ~</strong> Seems like you want to live with mood, attention, & learning disorders<br>
+        <strong>ANXIETY and DEPRESSION ~</strong> Another reason to make life harder.
+    </div>
+
+    <div class="bottom_left_text_box">Nicotine exposure during <br>adolescence can permanently <br>damage brain development,<br> affecting memory, concentration, <br>and increasing addiction risks [1]<br><br> Long-term vaping is linked<br> to severe lung damage, <br>similar to chronic smokers, <br>leading to COPD and other<br> deadly respiratory conditions [2]</div>
+
+    <div class="bottom_right_text_box">Nicotine products, disrupts brain <br>function and development, especially<br> in adolescents, affecting mood<br> regulation, learning, & impulse control,<br> potentially leading to long-term <br>mental health issues​ [6] <br><br>Vaping nicotine increases<br> sensitivity to stress and <br>negatively alters coping mechanisms<br> in the brain causing a vicious cycle <br>where one vape more to cope [6]</div>
+    
+    <div class="bottom_center_text_box"> What do you decide? (give No a try)</div>
+    
+    <div class="container">
+
+        <div class="gif_container">
+            <img src="https://media.giphy.com/media/ZDjQKWd2mvMChVKrBb/giphy.gif?cid=790b76115hs8sh94dj01hqa6pje2aombkuhtiq6mnwq0s3sn&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Cute animated illustration" style="width: 300px; height: auto;">
+        </div>
+
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Maybe?</button>
+            <button class="btn" id="noButton" onmouseover="moveButton(this)">No</button>
+        </div>
+    </div>
+
+    <div class="bottom_left_text_box2">Study found young vapers are <br>at a higher risk of developing <br>chronic bronchitis,<br> with rates significantly <br>higher than non-vapers [3]<br><br>Vaping can cause endothelial <br>dysfunction, a precursor to <br>heart disease, even <br>in healthy young users [4]</div>
+
+    <div class="bottom_right_text_box2">Vaping is found to increase<br> the likelihood of using other <br>substances, such as alcohol and<br> marijuana, which can further <br>increase mental health problems [4]<br><br>Current e-cigarette users have <br>been found to have 2.4 times higher <br>odds of being diagnosed with<br> depression compared to those who<br> have never used e-cigarettes [5]</div>
+    
+    <img src="https://www.mercurynews.com/wp-content/uploads/2019/09/VAPING-Marshall-Ramsey.jpg?w=620" class="image_center_right">
+
+    <script>
+        function nextPage() {
+            window.location.href = "2_yes.html";
+        }
+
+        function moveButton(btn) {
+            const offset = 100; // Offset to prevent button from disappearing off the edge
+            let x = Math.random() * (window.innerWidth - offset);
+            let y = Math.random() * (window.innerHeight - offset);
+
+            // Keep the button on the screen
+            x = Math.max(offset, Math.min(x, window.innerWidth - btn.offsetWidth - offset));
+            y = Math.max(offset, Math.min(y, window.innerHeight - btn.offsetHeight - offset));
+
+            btn.style.position = 'fixed';
+            btn.style.left = `${x}px`;
+            btn.style.top = `${y}px`;
+            btn.style.zIndex = 1000; /* Ensure the button is always on top */
+        }
+    </script>
+</body>
+</html>

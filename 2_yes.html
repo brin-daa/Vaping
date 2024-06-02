@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maybe?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Align items at the bottom */
+            align-items: center;
+            height: 100vh;
+            background-color: #60697c;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-bottom: 60px; /* Move container up by increasing the bottom margin */
+        }
+
+        .header_text {
+            font-family: 'Nunito', sans-serif;
+            font-size: 38px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .image_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px; /* Move image up by increasing the bottom margin */
+        }
+
+        img {
+            max-width: 35%; /* Further reduced image size */
+            height: auto;
+        }
+
+        .btn {
+            background-color: #FF4500; /* Reddish orange color */
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            bottom: 0px;
+            transition: background-color 0.3s ease;
+            margin-top: 0px; /* Move button up by reducing the top margin */
+            text-decoration: none; /* Removes underline from anchor tags */
+        }
+
+        .textbox {
+            position: absolute;
+            padding: 10px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #FF4500;
+        }
+
+        .top-left {
+            top: 20px;
+            left: 10px;
+            border: 2px solid #FF4500; /* Add border to the top-left text box */
+        }
+
+        .center-left {
+            top: 55%;
+            left: 50px;
+            transform: translateY(-50%);
+            color: #FF7043;
+            line-height: 1.5; /* Increase line height for more spacing */
+            font-size: 15px; /* Reduce text size for the center-left text box */
+        }
+
+        .top-center {
+            position: absolute;
+            top: 195px; /* Move the image slightly downwards */
+            left: 77%; /* Move the image further to the right */
+            transform: translateX(-50%);
+            width: 80%; /* Increase the size of the image */
+        }
+
+        .top-middle {
+            top: 130px;
+            left: 51%;
+            transform: translateX(-50%);
+            font-size: 13px;
+        }
+
+        .right-middle {
+            top: 56%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            font-weight: bold;
+            color: #FF7043;
+        }
+
+        .top-right {
+            top: 20px;
+            right: 10px;
+            border: 2px solid #FF4500; /* Add border to the top-right text box */
+        }
+
+        .image-top-right {
+            position: absolute;
+            top: 180px;
+            right: 170px;
+            max-width: 110px;
+            height: auto;
+        }
+        .image-top-right-2 {
+            position: absolute;
+            top: 340px;
+            right: 170px;
+            max-width: 110px;
+            height: auto;
+        }
+        .image-top-right-3 {
+            position: absolute;
+            top: 500px;
+            right: 170px;
+            max-width: 110px;
+            height: auto;
+        }
+	.image-top-right-4 {
+            position: absolute;
+            top: 650px;
+            right: 170px;
+            max-width: 110px;
+            height: auto;
+        }
+
+    </style>
+    <link rel="stylesheet" href="./yes_style.css">
+</head>
+<body>
+    <div class="top-center">
+        <img src="https://www.schulich.uwo.ca/rapport//2020/img/lungs-880.jpg" alt="Lung Image">
+    </div>
+    <div class="textbox top-left">
+        Case study from National Library of Medicine on E-cigarette or Vaping Product <br>Use-Associated Lung Injury (EVALI) showed these alarming statistics [7]
+    </div>
+    <div class="textbox center-left">
+        High Prevalence Among Teens: The study diagnosed <br>twenty-five patients with EVALI, with a mean age of just <br>16.5 years, highlighting that this severe condition <br>predominantly affects teenagers.<br><br>
+        Mental Health Issues: Alarmingly, the most common<br> comorbidity among these patients was a mental health <br>condition. Ten patients had anxiety and/or depression, <br>which is over 40% of the sample, demonstrating a strong <br>link between vaping and mental health issues.<br><br>
+        Severe Respiratory Symptoms: Over half of the patients <br>presented with fever and gastrointestinal symptoms, with <br>dyspnea (difficulty breathing) being the most common <br>respiratory complaint (48%). This shows the severe impact <br>of vaping on respiratory health.<br><br>
+        Substance Use and Detection: A staggering 96% of the <br>patients who underwent urine drug screens tested positive <br>for THC, suggesting a high prevalence of marijuana vaping <br>among the affected individuals. Additionally, most patients <br>(52%) denied using other forms of nicotine or marijuana<br> inhalation, highlighting vaping as the primary method of <br>substance use.<br><br>
+        Significant Hospitalization Rates: Out of the twenty-five <br>patients, twenty-four required hospitalization, with an average<br> stay of 7.8 days. The severity of the condition is further<br> including intubation and ECMO for some patients. 
+    </div>
+    <div class="textbox top-middle">
+        Image showing significant reduction In lung capacity <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;caused due to vape inhalation [8]
+    </div>
+    <div class="textbox right-middle">
+        This story is of a young girl who vaped constantly<br> everyday and her simple cough turned out to be<br> Pneumonia: <br><br><br><br><br> <br><br>This is a stitch from a doctor explains the ingredients<br> found is vapes and diseases associated with it: <br><br><br><br><br><br><br><br> This story shows how a young adult needed to get<br> a lung transplant as a result of vaping: <br><br><br><br><br> <br><br><br>Video by a women shows her life how due to her <br>vaping illness: <br><br><br><br><br> <br><br>
+    </div>
+    <div class="textbox top-right">
+        Listen and read some real-life stories yourself on Tik Tok. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please scan the QR code
+    </div>
+
+    <img src="https://i.imgur.com/5wFKWcQ.png" alt="Top Right Image" class="image-top-right">
+    <img src="https://i.imgur.com/js0M9TN.png" alt="Top Right Image 2" class="image-top-right-2">
+    <img src="https://i.imgur.com/2YmVSRz.png" alt="Top Right Image 3" class="image-top-right-3">
+    <img src="https://i.imgur.com/9b4PwwY.png" alt="Top Right Image 4" class="image-top-right-4">
+    <div class="container">
+
+        <div class="image_container">
+            <img src="https://i.redd.it/cjz9otdd5hy41.png" alt="Valentine's Image">
+        </div>
+
+        <!-- Button to navigate to 3_more.html -->
+        <a href="3_more.html" class="btn">Help Me QUIT</a>
+    </div>
+</body>
+</html>
